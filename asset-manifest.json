@@ -1,16 +1,16 @@
 {
   "main.css": "/recipe-app/static/css/main.ee370247.chunk.css",
-  "main.js": "/recipe-app/static/js/main.112bb6ba.chunk.js",
-  "main.js.map": "/recipe-app/static/js/main.112bb6ba.chunk.js.map",
+  "main.js": "/recipe-app/static/js/main.e3ab654e.chunk.js",
+  "main.js.map": "/recipe-app/static/js/main.e3ab654e.chunk.js.map",
   "static/css/1.e394894e.chunk.css": "/recipe-app/static/css/1.e394894e.chunk.css",
   "static/js/1.e9004d8d.chunk.js": "/recipe-app/static/js/1.e9004d8d.chunk.js",
   "static/js/1.e9004d8d.chunk.js.map": "/recipe-app/static/js/1.e9004d8d.chunk.js.map",
   "runtime~main.js": "/recipe-app/static/js/runtime~main.71cff449.js",
   "runtime~main.js.map": "/recipe-app/static/js/runtime~main.71cff449.js.map",
-  "static/media/bootstrap.min.css": "/recipe-app/static/media/glyphicons-halflings-regular.448c34a5.woff2",
-  "static/css/1.e394894e.chunk.css.map": "/recipe-app/static/css/1.e394894e.chunk.css.map",
+  "static/media/bootstrap.min.css": "/recipe-app/static/media/glyphicons-halflings-regular.fa277232.woff",
   "static/css/main.ee370247.chunk.css.map": "/recipe-app/static/css/main.ee370247.chunk.css.map",
+  "static/css/1.e394894e.chunk.css.map": "/recipe-app/static/css/1.e394894e.chunk.css.map",
   "index.html": "/recipe-app/index.html",
-  "precache-manifest.1ad5be96877a9cc58a1bb4c8e7024758.js": "/recipe-app/precache-manifest.1ad5be96877a9cc58a1bb4c8e7024758.js",
+  "precache-manifest.935e3eed2bc24ab69e61de7a950e2d43.js": "/recipe-app/precache-manifest.935e3eed2bc24ab69e61de7a950e2d43.js",
   "service-worker.js": "/recipe-app/service-worker.js"
 }
