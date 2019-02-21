@@ -8,17 +8,18 @@ class Recipe extends React.Component{
         componentDidMount = async () =>{
             
             const recipeName  = this.props.location.state.recipe;
-           const recipe_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipeName}`);
-            const data = await recipe_call.json();
+            const recipe_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipeName}`);
+             const data = await recipe_call.json();
            this.setState({activeRecipes:data.recipes[0]});
     
-        }
+         }
 
     render(){
         const recipe = this.state.activeRecipes;
         
         return (
         <div className="container">
+        
             {this.state.activeRecipes.length !==0 &&
             <div className="active-recipe">
                 <img className="active-recipe__img"  src={recipe.image_url} alt={recipe.title} />
@@ -31,7 +32,7 @@ class Recipe extends React.Component{
                 <Link to="/">Go Home</Link>
                 </button>
             </div>
-            }
+            } 
         </div>
             );
     }

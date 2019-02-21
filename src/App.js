@@ -21,16 +21,22 @@ const data = await api_call.json();
   }
   
  async componentDidMount() {
-  const recipe = "chicken" ;
-	console.log(recipe);
-        
-    const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipe}&page=2&count=5`);
-const data = await api_call.json();
-    this.setState({recipes:data.recipes});
-    console.log(data);
-  // const JSONData = localStorage.getItem("recipes");
-  // const recipes = JSON.parse(JSONData);
-  // this.setState({recipes});
+
+//     console.log(data);
+   const JSONData = localStorage.getItem("recipes");
+   if(JSONData){
+    console.log(JSONData);
+   const recipes = JSON.parse(JSONData);
+   this.setState({recipes});
+   }
+   else {
+       const recipe = "chicken" ;
+     	console.log('Local storage is blank');
+            
+         const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipe}&page=2&count=5`);
+     const data = await api_call.json();
+         this.setState({recipes:data.recipes});
+   }
   }
   componentDidUpdate =() =>{
     const recipes = JSON.stringify(this.state.recipes);
@@ -42,8 +48,8 @@ const data = await api_call.json();
        <header className="App-header">
           <h1 className="App-title">Recipe Search</h1>
         </header>
-      {/* <Form getRecipe={this.getRecipe}></Form>
-      <Recipes recipes={this.state.recipes}></Recipes> */}
+       <Form getRecipe={this.getRecipe}></Form>
+      <Recipes recipes={this.state.recipes}></Recipes> 
       </div>
 
     );
