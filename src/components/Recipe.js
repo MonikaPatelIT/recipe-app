@@ -8,7 +8,7 @@ class Recipe extends React.Component{
         componentDidMount = async () =>{
             
             const recipeName  = this.props.location.state.recipe;
-            const recipe_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipeName}`);
+            const recipe_call = await fetch(`http://www.food2fork.com/api/search?key=${API_KEY}&q=${recipeName}`);
              const data = await recipe_call.json();
            this.setState({activeRecipes:data.recipes[0]});
     
