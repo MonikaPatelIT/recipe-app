@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/recipe-app/static/media/glyphicons-halflings-regular.f4769f9b.eot"
   },
   {
-    "revision": "e8600937274dafcc5ad5",
+    "revision": "112bb6ba028ae4879212",
     "url": "/recipe-app/static/css/main.ee370247.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/recipe-app/static/js/runtime~main.71cff449.js"
   },
   {
-    "revision": "e8600937274dafcc5ad5",
-    "url": "/recipe-app/static/js/main.e8600937.chunk.js"
+    "revision": "112bb6ba028ae4879212",
+    "url": "/recipe-app/static/js/main.112bb6ba.chunk.js"
   },
   {
     "revision": "448c34a56d699c29117adc64c43affeb",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/recipe-app/static/css/1.e394894e.chunk.css"
   },
   {
-    "revision": "a774676a5705068af7f18e98a52ddbb8",
+    "revision": "30c1def6f39a0e8f636234681ef50082",
     "url": "/recipe-app/index.html"
   }
 ];
