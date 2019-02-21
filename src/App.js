@@ -10,7 +10,8 @@ state = {
   recipes: []
 }
   getRecipe = async (e) =>{
-    const recipe = e.target.elements.recipeName.value;
+    const recipe =  e.target.elements.recipeName.value==="" ? "chicken" : e.target.elements.recipeName.value;
+	console.log(recipe);
     e.preventDefault();
     
     const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipe}&page=2&count=5`);

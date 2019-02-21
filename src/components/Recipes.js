@@ -1,9 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 const Recipes = props =>(
+
     <div className="container">
     <div className="row" >
-    {
+    
+		if(props.recipes){
       props.recipes.map(recipe=> {
            
               return( 
@@ -27,6 +29,7 @@ const Recipes = props =>(
                 </div>              
                </div>)
       }
+		
       )
     } 
     </div>
