@@ -20,10 +20,16 @@ const data = await api_call.json();
 
   }
   
-componentDidMount= () =>{
-  const JSONData = localStorage.getItem("recipes");
-  const recipes = JSON.parse(JSONData);
-  this.setState({recipes});
+ async componentDidMount() {
+  const recipe =    "chicken" ;
+	console.log(recipe);
+        
+    const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipe}&page=2&count=5`);
+const data = await api_call.json();
+    this.setState({recipes:data.recipes});
+  // const JSONData = localStorage.getItem("recipes");
+  // const recipes = JSON.parse(JSONData);
+  // this.setState({recipes});
   }
   componentDidUpdate =() =>{
     const recipes = JSON.stringify(this.state.recipes);
