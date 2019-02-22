@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Recipe search Application using React
 
-## Available Scripts
+As a part of self study, I have worked on small and simple recipe search to fetch recipes by matching word using a third party API - [Food 2 fork](https://www.food2fork.com)
 
-In the project directory, you can run:
+## Demo 
 
-### `npm start`
+You can see the Demo here [https://monikapatelit.github.io/recipe-app/)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Screenshot
+![image](https://user-images.githubusercontent.com/9668906/53216844-c77a2a80-36ba-11e9-8433-6f40b851b657.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
+- I have used coding editor Visual studio code but you use any text editor
+- [Download](https://nodejs.org/en/) Node.js and npm and follow installation steps
+- Basic knowldge to create react boilerplate application to work on. Have a look the (tutorial by Gurjot Singh Makkar on Codeburst.io)[https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d] I like the most.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Let's the fun begin
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Creat account on food 2 fork  and get the API to access the Json file. URL will look like this
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipe}&page=2&count=5
+```
+Where we pass the API to access json data file with any word related to recipe or content of recipe to get related list of recipes 
 
-### `npm run eject`
+### four components 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- From component, user can search by recipe name or content of the recipe default search with 'Chicken'
+- Recipes Component, Will display all the search result in card
+- Recipe Component, detailed description of any perticular recipe 
+- Router Component, Will manage route between recipes and recipe components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Bootstraped
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Tried to create responsive application using Boostrap 3.3.7
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+For detailed tutorial, Please visit [Youtube channel by Hamza Mirza](https://www.youtube.com/watch?v=PbJt7-a2274)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
