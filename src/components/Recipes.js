@@ -4,8 +4,8 @@ const Recipes = props =>(
 
     <div className="container">
     <div className="row" >
-    
-		if(props.recipes){
+    Loading
+		{/* if(props.recipes){
       props.recipes.map(recipe=> {
            
               return( 
@@ -31,7 +31,7 @@ const Recipes = props =>(
       }
 		
       )
-    } 
+    }  */}
     </div>
     </div>
       

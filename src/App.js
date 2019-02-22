@@ -20,28 +20,28 @@ const data = await api_call.json();
 
   }
   
- async componentDidMount() {
+//  async componentDidMount() {
 
-//     console.log(data);
-   const JSONData = localStorage.getItem("recipes");
-   if(JSONData){
-    console.log(JSONData);
-   const recipes = JSON.parse(JSONData);
-   this.setState({recipes});
-   }
-   else {
-       const recipe = "chicken" ;
-     	console.log('Local storage is blank');
+// //     console.log(data);
+//    const JSONData = localStorage.getItem("recipes");
+//    if(JSONData){
+//     console.log(JSONData);
+//    const recipes = JSON.parse(JSONData);
+//    this.setState({recipes});
+//    }
+//    else {
+//        const recipe = "chicken" ;
+//      	console.log('Local storage is blank');
             
-         const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipe}&page=2&count=5`);
-     const data = await api_call.json();
-         this.setState({recipes:data.recipes});
-   }
-  }
-  componentDidUpdate =() =>{
-    const recipes = JSON.stringify(this.state.recipes);
-    localStorage.setItem("recipes", recipes);
-  }
+//          const api_call = await fetch(`https://www.food2fork.com/api/search?key=${API_KEY}&q=${recipe}&page=2&count=5`);
+//      const data = await api_call.json();
+//          this.setState({recipes:data.recipes});
+//    }
+//   }
+//   componentDidUpdate =() =>{
+//     const recipes = JSON.stringify(this.state.recipes);
+//     localStorage.setItem("recipes", recipes);
+//   }
   render() {
     return (
       <div className="App">
