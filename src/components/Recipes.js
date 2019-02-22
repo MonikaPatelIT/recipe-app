@@ -4,8 +4,8 @@ const Recipes = props =>(
 
     <div className="container">
     <div className="row" >
-    Loading
-		{/* if(props.recipes){
+    
+	 if(props.recipes){
       props.recipes.map(recipe=> {
            
               return( 
@@ -17,13 +17,13 @@ const Recipes = props =>(
                     {recipe.title.lenght < 20 ? `${recipe.title}` : `${recipe.title.substring(0,25)}`}</h5>
                     <p className="recipes__subtitle">Publisher: <span>
                         {recipe.publisher}</span> </p>
-                        <button className="recipes_buttons">
+                        {/* <button className="recipes_buttons">
                         <Link to={{pathname:`/recipe/${recipe.recipe_id}`,
                         state : {recipe:recipe.title}    
                     }} 
                          >View Recipe</Link>
                         
-                        </button>
+                        </button> */}
                     </div>
                     
                 </div>              
@@ -31,7 +31,7 @@ const Recipes = props =>(
       }
 		
       )
-    }  */}
+    } 
     </div>
     </div>
       
